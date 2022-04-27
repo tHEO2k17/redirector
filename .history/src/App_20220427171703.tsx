@@ -12,9 +12,9 @@ function App() {
     if (iOS() || isIOS) {
       window.location.href =
         "https://apps.apple.com/us/app/pamo/id1615449718?uo=4";
+
       return;
     }
-    
     window.location.href = "https://post.pamo.app";
   }, []);
 

@@ -18,6 +18,7 @@ function App() {
     window.location.href = "https://post.pamo.app";
   }, []);
 
+
   return (
     <div className="App">
       <h1>Please wait...</h1>

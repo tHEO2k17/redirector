@@ -4,7 +4,6 @@ import { isAndroid, isIOS, mobileVendor } from "react-device-detect";
 function App() {
   useEffect(() => {
     console.log("Device is ===> ", mobileVendor);
-    
     if (isAndroid) {
       window.location.href =
         "https://play.google.com/store/apps/details?id=app.pamo";

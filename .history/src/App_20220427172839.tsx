@@ -11,12 +11,27 @@ function App() {
 
     if (isIOS) {
       window.location.href =
-        "https://itunes.apple.com/us/app/pamo/id1615449718?uo=4";
+        "https://apps.apple.com/us/app/pamo/id1615449718?uo=4";
       return;
     }
 
     window.location.href = "https://post.pamo.app";
   }, []);
+
+  function iOS() {
+    return (
+      [
+        "iPad Simulator",
+        "iPhone Simulator",
+        "iPod Simulator",
+        "iPad",
+        "iPhone",
+        "iPod",
+      ].includes(navigator.platform) ||
+      // iPad on iOS 13 detection
+      (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    );
+  }
 
   return (
     <div className="App">

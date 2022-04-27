@@ -11,7 +11,7 @@ function App() {
 
     if (isIOS) {
       window.location.href =
-        "https://itunes.apple.com/us/app/pamo/id1615449718?uo=4";
+        "https://apps.apple.com/us/app/pamo/id1615449718?uo=4";
       return;
     }
 

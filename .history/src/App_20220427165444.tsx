@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
      <h1>Please wait...</h1>
-     <p>Kindly close tab and visit your store if this is taking longer</p>
+     <p>Close tab and visit your store if this is taking longer</p>
     </div>
   );
 }
